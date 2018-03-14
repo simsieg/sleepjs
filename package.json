@@ -1,0 +1,42 @@
+{
+  "name": "@simsieg/sleepjs",
+  "version": "1.0.0",
+  "description": "Asynchronous sleep with better time functions",
+  "main": "source/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "cover": "istanbul cover _mocha test/index.js -- --report=lcovonly --default-excludes",
+    "test": "rm -rf coverage && npm run lint && npm run cover",
+    "coveralls": "cat ./coverage/lcov.info | coveralls && cat ./coverage/lcov.info | codeclimate-test-reporter && rm -rf ./coverage"
+  },
+  "author": "Simon Siegert",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.18.2"
+  },
+  "dependencies": {
+    "istanbul": "^1.0.0-alpha.2",
+    "mocha": "^5.0.4",
+    "mocha-lcov-reporter": "^1.3.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "promise",
+    "sleep",
+    "time"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simsieg/sleepjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simsieg/sleepjs/issues"
+  },
+  "homepage": "https://github.com/simsieg/sleepjs#readme"
+}

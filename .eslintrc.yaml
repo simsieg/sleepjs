@@ -1,0 +1,174 @@
+env:
+  browser: true
+  node: true
+  es6: true
+extends:
+  - eslint:recommended
+parser: babel-eslint
+parserOptions:
+  ecmaFeartures:
+    jsx: true
+  sourceType: module
+  ecmaVersion: 2017
+rules:
+  array-callback-return:
+    - error
+  arrow-spacing:
+    - error
+  block-scoped-var:
+    - error
+  camelcase:
+    - error
+  brace-style:
+    - error
+    - stroustrup
+  comma-dangle:
+    - error
+    - always-multiline
+  comma-spacing:
+    - error
+  comma-style:
+    - error
+    - last
+  constructor-super:
+    - error
+  curly:
+    - error
+    - multi-line
+    - consistent
+  default-case:
+    - error
+  dot-notation:
+    - error
+  dot-location:
+    - error
+    - property
+  eqeqeq:
+    - error
+    - allow-null
+  guard-for-in:
+    - error
+  id-blacklist:
+    - error
+    - cb
+    - callback
+    - err
+    - req
+    - res
+  id-length:
+    - error
+  indent:
+    - error
+    - 2
+  key-spacing:
+    - error
+  keyword-spacing:
+    - error
+  linebreak-style:
+    - error
+    - unix
+  max-len:
+    - error
+    - code: 100
+      tabWidth: 4
+  new-cap:
+    - error
+  newline-per-chained-call:
+    - error
+    - ignoreChainWithDepth: 1
+  no-bitwise:
+    - error
+  no-caller:
+    - error
+  no-cond-assign:
+    - error
+    - except-parens
+  no-debugger:
+    - error
+  no-empty:
+    - error
+  no-eval:
+    - error
+  no-extend-native:
+    - error
+  no-extra-parens:
+    - error
+    - all
+    - nestedBinaryExpressions: false
+  no-irregular-whitespace:
+    - error
+  no-iterator:
+    - error
+  no-implicit-coercion:
+    - error
+  no-loop-func:
+    - error
+  no-multi-str:
+    - error
+  no-new:
+    - error
+  no-proto:
+    - error
+  no-script-url:
+    - error
+  no-sequences:
+    - error
+  no-shadow:
+    - error
+  no-spaced-func:
+    - error
+  no-undef:
+    - error
+  no-unused-vars:
+    - error
+  no-var:
+    - error
+  no-whitespace-before-property:
+    - error
+  no-with:
+    - error
+  one-var:
+    - error
+    - never
+  operator-assignment:
+    - error
+    - always
+  operator-linebreak:
+    - error
+    - after
+    - overrides:
+        ?: before
+        ":": before
+  prefer-arrow-callback:
+    - error
+  prefer-const:
+    - error
+    - destructuring: any
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
+  semi-spacing:
+    - error
+  space-before-blocks:
+    - error
+    - always
+  space-before-function-paren:
+    - error
+    - always
+  space-infix-ops:
+    - error
+  spaced-comment:
+    - error
+    - always
+  strict:
+    - error
+  valid-typeof:
+    - error
+  wrap-iife:
+    - error
+    - inside
+  yoda:
+    - error
