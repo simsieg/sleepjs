@@ -14,13 +14,12 @@
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "coveralls": "^3.0.0",
-    "eslint": "^4.18.2"
-  },
-  "dependencies": {
+    "eslint": "^4.18.2",
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^5.0.4",
     "mocha-lcov-reporter": "^1.3.0"
   },
+  "dependencies": {},
   "directories": {
     "test": "test"
   },
