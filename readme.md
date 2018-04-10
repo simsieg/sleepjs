@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/simsieg/sleepjs.svg?branch=master)](https://travis-ci.org/simsieg/sleepjs) [![Coverage Status](https://coveralls.io/repos/github/simsieg/sleepjs/badge.svg?branch=master)](https://coveralls.io/github/simsieg/sleepjs?branch=master) <br />
 
-Asyncronus sleep functions for Node.js.
+Asynchronus sleep functions for Node.js.
 
 ## Installation
 
