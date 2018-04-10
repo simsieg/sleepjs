@@ -9,13 +9,13 @@ Asyncronus sleep functions for Node.js.
 Install sleepjs with npm:
 
 ```bash
-npm install @simsieg/sleepjs
+npm install sleepjs
 ```
 
 Or with yarn:
 
 ```bash
-yarn add @simsieg/sleepjs
+yarn add sleepjs
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ But also different sleep functions can be required.
 The sleep timer can be awaited with async / await.
 
 ```javascript
-const sleep = require('@simsieg/sleepjs')
+const sleep = require('sleepjs')
 
 async function myFunction () {
   await sleep(500)
@@ -43,7 +43,7 @@ myFunction()
 The Promise returns the value of slept milliseconds when it resolves.
 
 ```javascript
-const sleepMinutes = require('@simsieg/sleepjs').sleepMinutes
+const sleepMinutes = require('sleepjs').sleepMinutes
 
 function myFunction () {
   return sleepMinutes(5)
@@ -58,7 +58,7 @@ myFunction() // Will print: '300000 ms later'
 Different sleep instances can be run and awaited concurrently with `Promise.all`.
 
 ```javascript
-const sleep = require('@simsieg/sleepjs')
+const sleep = require('sleepjs')
 
 async function myFunction () {
   await Promise.all([sleep(100), sleep(100), sleep(200)])
@@ -72,10 +72,10 @@ myFunction() // Will take only slightly more than 200 ms
 Sleepjs includes several functions to wrap common sleep times:
 
 ```javascript
-const sleep = require('@simsieg/sleepjs').sleep
-const sleepMilliseconds = require('@simsieg/sleepjs').sleepMilliseconds
-const sleepSeconds = require('@simsieg/sleepjs').sleepSeconds
-const sleepMinutes = require('@simsieg/sleepjs').sleepMinutes
-const sleepHours = require('@simsieg/sleepjs').sleepHours
-const sleepDays = require('@simsieg/sleepjs').sleepDays
+const sleep = require('sleepjs').sleep
+const sleepMilliseconds = require('sleepjs').sleepMilliseconds
+const sleepSeconds = require('sleepjs').sleepSeconds
+const sleepMinutes = require('sleepjs').sleepMinutes
+const sleepHours = require('sleepjs').sleepHours
+const sleepDays = require('sleepjs').sleepDays
 ```
