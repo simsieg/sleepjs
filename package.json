@@ -26,9 +26,13 @@
   "keywords": [
     "async",
     "await",
+    "delay",
+    "pause",
     "promise",
     "sleep",
-    "time"
+    "time",
+    "timeout",
+    "wait"
   ],
   "repository": {
     "type": "git",
