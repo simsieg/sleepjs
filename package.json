@@ -1,6 +1,6 @@
 {
   "name": "sleepjs",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Asynchronous sleep with better time functions",
   "main": "source/index.js",
   "scripts": {
