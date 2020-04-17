@@ -2,9 +2,15 @@ env:
   browser: true
   node: true
   es6: true
+  jest/globals: true
 extends:
   - eslint:recommended
-parser: babel-eslint
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+parser: '@typescript-eslint/parser'
+plugins:
+  - jest
+  - '@typescript-eslint'
 parserOptions:
   ecmaFeartures:
     jsx: true
@@ -69,13 +75,13 @@ rules:
     - unix
   max-len:
     - error
-    - code: 100
+    - code: 110
       tabWidth: 4
   new-cap:
     - error
   newline-per-chained-call:
     - error
-    - ignoreChainWithDepth: 1
+    - ignoreChainWithDepth: 2
   no-bitwise:
     - error
   no-caller:

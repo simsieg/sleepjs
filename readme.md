@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/simsieg/sleepjs.svg?branch=master)](https://travis-ci.org/simsieg/sleepjs) [![Coverage Status](https://coveralls.io/repos/github/simsieg/sleepjs/badge.svg?branch=master)](https://coveralls.io/github/simsieg/sleepjs?branch=master) [![Downloads](https://img.shields.io/npm/dm/sleepjs.svg)](https://img.shields.io/npm/dm/sleepjs.svg)  <br />
 
-Asynchronus sleep functions for Node.js.
+Asynchronus sleep functions with typescript support.
 
 ## Installation
 
@@ -28,11 +28,11 @@ But also different sleep functions can be required.
 The sleep timer can be awaited with async / await.
 
 ```javascript
-const sleep = require('sleepjs')
+const { sleep } = require('sleepjs')
 
-async function myFunction () {
+const myFunction = async () => {
   await sleep(500)
-  console.info('500 ms later')
+  console.info('It is 500 ms later now')
 }
 
 myFunction()
@@ -43,7 +43,7 @@ myFunction()
 The Promise returns the value of slept milliseconds when it resolves.
 
 ```javascript
-const sleepMinutes = require('sleepjs').sleepMinutes
+const { sleepMinutes } = require('sleepjs')
 
 function myFunction () {
   return sleepMinutes(5)
@@ -58,7 +58,7 @@ myFunction() // Will print: '300000 ms later'
 Different sleep instances can be run and awaited concurrently with `Promise.all`.
 
 ```javascript
-const sleep = require('sleepjs')
+const { sleep } = require('sleepjs')
 
 async function myFunction () {
   await Promise.all([sleep(100), sleep(100), sleep(200)])
@@ -72,10 +72,23 @@ myFunction() // Will take only slightly more than 200 ms
 Sleepjs includes several functions to wrap common sleep times:
 
 ```javascript
-const sleep = require('sleepjs').sleep
-const sleepMilliseconds = require('sleepjs').sleepMilliseconds
-const sleepSeconds = require('sleepjs').sleepSeconds
-const sleepMinutes = require('sleepjs').sleepMinutes
-const sleepHours = require('sleepjs').sleepHours
-const sleepDays = require('sleepjs').sleepDays
+const { sleep } = require('sleepjs')
+const { sleepMilliseconds } = require('sleepjs') // Same as sleep
+const { sleepSeconds } = require('sleepjs')
+const { sleepMinutes } = require('sleepjs')
+const { sleepHours } = require('sleepjs')
+const { sleepDays } = require('sleepjs')
+```
+
+Import with typescript is also possible.
+
+```typescript
+import {
+  sleep,
+  sleepMilliseconds,
+  sleepSeconds,
+  sleepMinutes,
+  sleepHours,
+  sleepDays,
+} from 'sleepjs'
 ```
