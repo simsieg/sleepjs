@@ -1,8 +1,9 @@
 {
   "name": "sleepjs",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Asynchronous sleep with better time functions and typescript bindings",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts",
@@ -23,6 +24,11 @@
     "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
   },
+  "files": [
+    "dist/index.js",
+    "index.d.ts",
+    "index.d.ts.map"
+  ],
   "dependencies": {},
   "jest": {
     "transform": {
