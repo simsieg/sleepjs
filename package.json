@@ -1,6 +1,6 @@
 {
   "name": "sleepjs",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Asynchronous sleep with better time functions and typescript bindings",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
